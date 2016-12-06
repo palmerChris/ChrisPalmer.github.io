@@ -12,11 +12,12 @@
 
 		<style type="text/css">
 			body {
-				background:#9c9;
+        background-image: url("https://media.giphy.com/media/12RjoT5cjibdEQ/source.gif");
+        background-size: 1700px;
 				text-align:center;
 			}
 			canvas {
-				background:#9c9;
+				background:#00FFFF;
 				-webkit-box-shadow:0 0 20px #000;
 				-moz-box-shadow: 0 0 20px #000;
 				box-shadow:0 0 20px #000;
@@ -124,12 +125,7 @@
 				interval = window.setInterval(clock, 60);
 				document.onkeydown = function(e) {
 					var code = e.keyCode - 37;
-					/*
-					 * 0: left
-					 * 1: up
-					 * 2: right
-					 * 3: down
-					 **/
+
 					if (0 <= code && code < 4 && code !== turn[0]) {
 						turn.unshift(code);
 					} else if (-5 == code) {
